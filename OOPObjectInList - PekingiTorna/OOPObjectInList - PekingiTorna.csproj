@@ -47,12 +47,16 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="repository\PekingiTornaszTorna.cs" />
+    <Compile Include="repository\PekingiTornaszTornaAdatokBeolvasasaFajlbol.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="adatfajlok\torna.txt" />
-    <None Include="adatfajlok\torna.csv" />
+    <None Include="..\..\..\Dgycsaba.vasvari.hu\Dropbox\_SZakgimnázium\Vizsga\Központi\OKJKözponti\PekingiTorna\torna.csv">
+      <Link>adatfajlok\torna.csv</Link>
+    </None>
     <None Include="App.config" />
     <None Include="feladat\feladatPekingiTorna.pdf" />
+    <None Include="feladat\feladatPekingiTorna_eredeti.pdf" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
