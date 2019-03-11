@@ -6,15 +6,18 @@ using System.Threading.Tasks;
 
 namespace OOPObjectInList___PekingiTorna.model
 {
-    class Versenyzo : Tornasz
+    class Versenyzo 
     {
         public int Rajtszam { set; get; }
         public string Nev { set; get; }
         public string Orszag { set; get; }
         public string Foldresz { set; get; }
 
-        public Versenyzo(int rajtszam, string nev, string orszag, string foldresz, double talaj, double lolenges, double gyuru, double nyujto, double korlat, double ugras)
-            :base (talaj, lolenges, gyuru, nyujto, korlat, ugras)
+        public Versenyzo()
+        { }
+
+        public Versenyzo(int rajtszam, string nev, string orszag, string foldresz)
+           
         {
             Rajtszam = rajtszam;
             Nev = nev;

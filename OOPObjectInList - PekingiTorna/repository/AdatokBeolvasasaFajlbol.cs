@@ -7,8 +7,8 @@ using System.Threading.Tasks;
 
 namespace OOPObjectInList___PekingiTorna.repository
 {
-    class PekingiTornaszTornaAdatokBeolvasasaFajlbol
+    class AdatokBeolvasasaFajlbol
     {
-        List<Versenyzo> versenyzok;
+        List<Tornasz> tornaszok;
     }
 }

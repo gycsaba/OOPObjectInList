@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace OOPObjectInList___PekingiTorna.model
 {
-    class Tornasz
+    class Tornasz :Versenyzo
     {
         public double Talaj { get; set; }
         public double Lolenges { get; set; }
@@ -15,7 +15,8 @@ namespace OOPObjectInList___PekingiTorna.model
         public double Korlat { get; set; }
         public double Ugras { get; set; }
 
-        public Tornasz(double talaj, double lolenges, double gyuru, double nyujto, double korlat, double ugras)
+        public Tornasz(int rajtszam, string nev, string orszag, string foldresz, double talaj, double lolenges, double gyuru, double nyujto, double korlat, double ugras)
+             : base(rajtszam, nev, orszag, foldresz)
         {
             Talaj = talaj;
             Lolenges = lolenges;
