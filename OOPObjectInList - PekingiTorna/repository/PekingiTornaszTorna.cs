@@ -7,11 +7,16 @@ using System.Threading.Tasks;
 
 namespace OOPObjectInList___PekingiTorna.repository
 {
-    class PekingiTornaszTorna
+    class PekingiTornaszok
     {
         List<Tornasz> tornaszok;
 
-        public PekingiTornaszTorna()
+        public List<Tornasz> getPekingiTornaszok()
+        {
+            return tornaszok;
+        }
+
+        public PekingiTornaszok()
         {
             tornaszok = new List<Tornasz>();
 
