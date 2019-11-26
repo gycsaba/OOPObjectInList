@@ -26,6 +26,11 @@ namespace Vitorlaverseny.modell
         public int Ora { get => ora; set => ora = value; }
         public int Perc { get => perc; set => perc = value; }
 
+        public int getIdoeredmeny()
+        {
+            return nap * 24 * 60 + ora * 60 + perc;
+        }
+
         public Helyezes(string sor)
         {
             string[] adat = sor.Split(';');
@@ -41,7 +46,7 @@ namespace Vitorlaverseny.modell
 
         public override string ToString()
         {
-            return eredmeny+". "+kategoria+" kategóriában+"+hajo+"\n"+
+            return eredmeny+". "+kategoria+" kategóriában, halyó neve:"+hajo+"\n"+
                 "Klub:"+klub+". Kormányos:"+kormanyos+".\n"+
                 "Időeredmény (nap,óra,perc): "+nap+":"+ora+":"+perc;
         }
