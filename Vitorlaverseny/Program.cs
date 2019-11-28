@@ -24,10 +24,13 @@ namespace Vitorlaverseny
             Console.WriteLine("5. feladat");
             Console.WriteLine(t.getAdatokHajoAlapjan());
             Console.WriteLine("6. feladat");
-           Console.WriteLine("KYK VSE klub legjobb időeredménye: "+t.getKlubLegjobbIdoeredmeny("KYK VSE")+" perc");
+            Console.WriteLine("KYK VSE klub legjobb időeredménye: "+t.getKlubLegjobbIdoeredmeny("KYK VSE")+" perc");
             Console.WriteLine("7. feladat");
             Console.WriteLine("Yardstick I/1 kategória legjobb időeredménye: " + t.getKatogoriaLegjobbIdoeredmeny("Yardstick I/1") + " perc");
-
+            Console.WriteLine("8. feladat");
+            t.irFajlbanKlubonkentHanyVersenyzoVolt();
+            t.irFajlbanKategoriankentHanyVersenyzoVolt();
+            Console.WriteLine("Adatok fájlba írása megtörtént.");
             Console.ReadKey();
         }
     }

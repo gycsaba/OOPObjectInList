@@ -72,5 +72,33 @@ namespace Vitorlaverseny.tarolo
             kategoriak = helyezesek.FindAll(x => x.Kategoria == kategoria);
             return kategoriak.Min(x => x.getIdoeredmeny());
         }
+
+        public void irFajlbanKlubonkentHanyVersenyzoVolt()
+        {
+            HashSet<string> klubok = new HashSet<string>();
+            foreach (Helyezes h in helyezesek)
+                klubok.Add(h.Klub);
+            StreamWriter sw = new StreamWriter("klubok.txt");
+            foreach(string klub in klubok)
+            {
+                int versenyzoszam = helyezesek.FindAll(x => x.Klub == klub).Count;
+                sw.WriteLine(klub + " klubnak " + versenyzoszam + " verzenyzője van.");
+            }
+            sw.Close();
+        }
+
+        public void irFajlbanKategoriankentHanyVersenyzoVolt()
+        {
+            HashSet<string> kategoriak = new HashSet<string>();
+            foreach (Helyezes h in helyezesek)
+                kategoriak.Add(h.Kategoria);
+            StreamWriter sw = new StreamWriter("kategoriak.txt");
+            foreach (string kategoria in kategoriak)
+            {
+                int versenyzoszam = helyezesek.FindAll(x => x.Kategoria == kategoria).Count;
+                sw.WriteLine(kategoria + " kategóriában " + versenyzoszam + " verzenyző indult.");
+            }
+            sw.Close();
+        }
     }
 }
