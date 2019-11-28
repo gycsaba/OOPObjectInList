@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{40DD77DD-A069-4DE2-9984-9C787FFF7DDF}</ProjectGuid>
+    <ProjectGuid>{320F2276-2650-41BD-9E3A-29184C36F207}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>VitorlaversenyFeladat</RootNamespace>
-    <AssemblyName>VitorlaversenyFeladat</AssemblyName>
+    <RootNamespace>Vitorlaverseny</RootNamespace>
+    <AssemblyName>Vitorlaverseny</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,13 +43,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="modell\Helyezes.cs" />
+    <Compile Include="model\Helyezes.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="tarolo\Tarolo.cs" />
+    <Compile Include="repo\Tarolo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="kekszalag.csv" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
