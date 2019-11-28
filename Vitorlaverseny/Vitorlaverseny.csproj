@@ -50,6 +50,8 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="feladatA.docx" />
+    <None Include="feladatB.docx" />
     <None Include="kekszalag.csv" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -82,7 +82,7 @@ namespace Vitorlaverseny.tarolo
             foreach(string klub in klubok)
             {
                 int versenyzoszam = helyezesek.FindAll(x => x.Klub == klub).Count;
-                sw.WriteLine(klub + " klubnak " + versenyzoszam + " verzenyzője van.");
+                sw.WriteLine(klub + " klubnak " + versenyzoszam + " versenyzője van.");
             }
             sw.Close();
         }
